@@ -1,0 +1,28 @@
+@import './design-doc.scss';
+body {
+	margin: 0;
+	font-family: 'rubik';
+	background-color: $background-color;
+}
+.typewriter-container {
+	color: $text-color;
+	font-size: 2vw;
+	.words {
+		color: $text-color-two;
+	}
+	.caret {
+		color: $text-color-two;
+		animation: caret 0.9s infinite;
+	}
+	.typing {
+		color: $text-color-two;
+	}
+	@keyframes caret {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+}
